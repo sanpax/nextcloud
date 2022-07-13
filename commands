@@ -1,0 +1,9 @@
+# Encrypt files in the Nextcloud
+#-----------------------------------------------------------------------
+#
+cd var/wwww/html/nextcloud)
+#
+sudo -u www-data php occ encryption:decrypt-all
+sudo -u www-data php occ maintenance:mode --on
+sudo -u www-data php occ encryption:disable
+sudo -u www-data php occ maintenance:mode --off
